@@ -1,0 +1,13 @@
+
+<section class="surface-ground py-8 md:px-6 lg:px-8 text-center grid h-screen">
+  <div class="mb-3 font-bold text-3xl col-12">
+      <h1 class="text-900">Proyectos</h1>
+  </div>
+  <div class="grid col-12">
+    <ng-container *ngIf="proyects.length > 0;else comingSoon"></ng-container>
+    <ng-template #comingSoon>
+      Próximamente...
+    </ng-template>
+  </div>
+</section>
+

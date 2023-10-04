@@ -1,0 +1,12 @@
+.font-bold.logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.font-bold.logo:hover {
+  color: var(--primary-color); /* Cambia aquí al color deseado */
+  transition: color 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+}
+
+
+

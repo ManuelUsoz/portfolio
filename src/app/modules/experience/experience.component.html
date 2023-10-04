@@ -1,0 +1,19 @@
+
+<section class="surface-ground px-4 py-8 md:px-6 lg:px-8 text-center grid md:h-screen h-full">
+  <div class="mb-3 font-bold text-3xl col-12">
+      <h1 class="text-900">Experiencia</h1>
+  </div>
+  <div class="grid col-12">
+    <ng-container *ngIf="cards">
+      <div *ngFor="let card of cards" class="col-12 md:col-4 mb-4 px-5">
+        <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
+          <img src="{{card.src}}" alt="{{card.alt}}" width="{{card.width}}">
+        </span>
+        <div class="text-900 text-xl mb-3 font-medium">{{card.company}}</div>
+        <span class="text-700 line-height-3">{{card.jobPosition}}</span>
+        <p>{{card.since}} {{card.to}}</p>
+      </div>
+    </ng-container>
+  </div>
+</section>
+

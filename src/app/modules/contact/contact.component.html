@@ -1,0 +1,38 @@
+
+<div class="grid surface-ground h-screen align-items-center justify-content-center">
+  <section class="introduction-message col-12 md:col-6 p-5 text-left">
+
+    <span class="font-bold text-5xl">Gracias por visitar mi portafolio.</span>
+    <p>Espero con ansias conocer más sobre ti. ¡Hablemos pronto!</p>
+    <p>Saludos,<br>
+    Manu</p>
+
+  </section>
+
+  <section class="about-me-section col-12 md:col-6 p-3">
+    <h3 class="text-3xl">Contactame!</h3>
+
+    <form [formGroup]="form">
+      <div class="field">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" formControlName="name" pInputText class="col-12">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" formControlName="email" pInputText class="col-12">
+      </div>
+      <div class="field">
+        <label for="message">Mensaje</label>
+        <textarea rows="5" cols="30" pInputTextarea formControlName="message" [autoResize]="true" class="col-12"></textarea>
+      </div>
+
+      <div class="field">
+        <p-button label="Submit" (onClick)="onSubmittedForm()" [disabled]="form.invalid"></p-button>
+      </div>
+    </form>
+  </section>
+</div>
+
+
+
+

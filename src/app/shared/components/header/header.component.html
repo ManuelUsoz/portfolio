@@ -1,0 +1,27 @@
+
+<div class="grid sticky">
+  <p-menubar [model]="menubarItems" class="w-screen p-0 m-0">
+    <ng-template let-item pTemplate="item">
+      <a>
+        {{ item.label }}
+      </a>
+    </ng-template>
+    <ng-template pTemplate="end">
+      <p class="font-bold logo" [routerLink]="['/']" routerLinkActive="router-link-active" >miun.dev</p>
+    </ng-template>
+  </p-menubar>
+
+</div>
+
+<!-- <div class="nav">
+  <p-dock [model]="menubarItems" [position]="'top'" >
+    <ng-template pTemplate="item" let-item>
+      <a class="w-full">
+        {{ item.label }}
+      </a>
+    </ng-template>
+  </p-dock>
+
+</div> -->
+
+

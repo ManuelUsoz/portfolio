@@ -1,0 +1,34 @@
+
+<div class="grid surface-ground text-800 h-screen">
+
+  <div class="col-12 md:col-12 p-6 text-center md:text-left flex align-items-center justify-content-center">
+      <section>
+          <h1 class="block text-7xl font-bold mb-4 text-primary">Fullstack developer.
+            <p-image src="../../assets/logos/icons8-waving-hand-light-skin-tone-emoji-96.png"></p-image>
+          </h1>
+          <h3 class="mt-0 mb-4 line-height-3">
+              Hola! Soy Manuel I. Usoz. Un apasionado desarrollador fullstack y mi objetivo <br>
+              es crear soluciones innovadoras y eficientes que impulsen
+              <br>el éxito de los proyectos a través del código.
+          </h3>
+
+          <section class="social-media-links">
+            <p-image class="social-media-img" src="../../assets/logos/icons8-linkedin-48.png" width="40" (click)="navigateToLinkedin()"></p-image>
+            <p-image class="social-media-img" src="../../assets/logos/gihub.png" width="40" (click)="navigateToGitHub()"></p-image>
+          </section>
+          <section class="tech-stack-section grid mt-3">
+            <div class="col-12 md:col-6 md:justify-content-start flex align-items-center text-center justify-content-center">
+              <span class="font-bold text-5x1">Tech stack</span>
+            </div>
+            <div class="col-12 md:col-6 md:text-left flex align-items-center justify-content-center">
+                  <img height="35" *ngFor="let icon of icons" [src]="icon.src" [alt]="icon.alt">
+
+            </div>
+
+          </section>
+
+
+      </section>
+
+  </div>
+</div>
